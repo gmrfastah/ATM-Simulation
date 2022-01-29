@@ -351,4 +351,4 @@ void insertcard()
       fclose(fp);
 }
 
-//panget lehjan, pogi gian
+
