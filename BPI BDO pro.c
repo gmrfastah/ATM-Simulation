@@ -87,7 +87,7 @@ void withdraw()
      else
      {
          int amountW,choice;
-         float charge=0.20;
+         float charge=18;
          printf("\nEnter amount to withdraw\n");
          scanf("%d",&amountW);
          if(amountW>l.data[l.i].balance)
@@ -258,7 +258,7 @@ void anotransact()
 void download()
 {
     FILE *fp;
-    fp = fopen("d:\pinn.dbf", "r+");
+    fp = fopen("e:\pinn.dbf", "r+");
     while(!feof(fp))
     {
         fscanf(fp,"%d", &l.i);
@@ -294,7 +294,7 @@ void download2()
 void upload()
 {
   FILE *fp;
-  fp=fopen("d:\pinn.dbf","w");
+  fp=fopen("e:\pinn.dbf","w");
   int i;
   fprintf(fp,"%d\n", l.i);
   fprintf(fp,"%s\n",l.data[l.i].Lname);
@@ -345,7 +345,7 @@ void insertcard()
    printf("Please insert card...\n");
    do
    {
-      fp = fopen("d:\pinn.dbf","w");
+      fp = fopen("e:\pinn.dbf","w");
    }
       while (fp==NULL);
       fclose(fp);

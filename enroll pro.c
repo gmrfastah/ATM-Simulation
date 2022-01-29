@@ -136,7 +136,7 @@ void insertcard()
    printf("Please insert card...\n");
    do
    {
-      fp = fopen("d:\pinn.txt","w");
+      fp = fopen("e:\pinn.txt","w");
    }
       while (fp==NULL);
       fclose(fp);
@@ -177,7 +177,7 @@ void upload()
 {
   FILE *fp;
   int i;
-  fp=fopen("d:\pinn.dbf","w");
+  fp=fopen("e:\pinn.dbf","w");
   fprintf(fp,"%d\n", l.accs);
   fprintf(fp,"%s\n",l.data[l.accs].Lname);
   fprintf(fp,"%s\n",l.data[l.accs].Fname);
