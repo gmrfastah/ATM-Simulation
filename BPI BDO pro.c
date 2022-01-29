@@ -350,3 +350,5 @@ void insertcard()
       while (fp==NULL);
       fclose(fp);
 }
+
+//panget lehjan, pogi gian
